@@ -1,0 +1,47 @@
+/* AuthForm.css */
+.auth-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auth-form h2 {
+    text-align: center;
+  }
+  
+  .auth-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-form label {
+    margin-top: 10px;
+  }
+  
+  .auth-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .auth-form button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .auth-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .auth-form p {
+    text-align: center;
+    cursor: pointer;
+    color: #007bff;
+  }
+  
