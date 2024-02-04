@@ -8,7 +8,7 @@ const RegisterAndLoginFrom = () => {
   const [password, setPassword] = useState("");
   const [isRegister, setIsRegister] = useState(true);
   const [isLoginOrRegister, setIsLoginOrRegister] = useState(null);
-  const { setUsername: setLoggedInUsername, setId } = useContext(UserContext);
+  const { setUsername: setLoggedInUsername, setId }  = useContext(UserContext);
   const URL = import.meta.env.VITE_BASE_URL;
 
   useEffect(() => {
@@ -35,6 +35,7 @@ const RegisterAndLoginFrom = () => {
       username,
       password,
     });
+    
     // Swal.fire({
     //   position: "top-end",
     //   icon: "success",
@@ -42,8 +43,11 @@ const RegisterAndLoginFrom = () => {
     //   showConfirmButton: false,
     //   timer: 1500
     // });
-    setLoggedInUsername(data.username);
-    setId(data.id);
+    
+    if (isLoginOrRegister === "login") {
+      setLoggedInUsername(username);
+      setId(data.id);
+    }
     console.log(data.id);
     console.log(data.username);
   };

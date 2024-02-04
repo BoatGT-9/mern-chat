@@ -1,14 +1,16 @@
 import "./App.css";
-import { useState } from 'react'
+
 import { UserContextProvider } from './context/Usercontext'
 import Routes from './Routes'
-
+import Navbar from "./components/Navbar";
+import axios from "axios";
 function App() {
-  const [count, setCount] = useState(0)
+  axios.defaults.baseURL = "http://localhost:5000"
 
   return (
     <>
     <UserContextProvider>
+    {/* <Navbar/> */}
     <Routes />
     </UserContextProvider>
 

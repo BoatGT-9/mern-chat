@@ -1,7 +1,45 @@
+/* Navbar.css */
+
+/* Navbar Container */
+nav {
+  background-color: #2d3748; /* bg-gray-800 */
+  padding: 1rem; /* p-4 */
+}
+
+/* Navbar Content */
+.container {
+  max-width: 100%; /* container mx-auto */
+}
+
+.title {
+  color: #ffffff; /* text-white */
+  font-weight: bold; /* font-bold */
+  font-size: 1.5rem; /* text-xl */
+}
+
+/* Login Button */
+.login-btn {
+  background-color: #1e40af; /* bg-blue-500 */
+  color: #ffffff; /* text-white */
+  padding: 0.5rem 1rem; /* px-4 py-2 */
+  border-radius: 0.375rem; /* rounded-md */
+
+
+  /* Hover Effect */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+  background-color: #1d4ed8; /* hover:bg-blue-600 */
+}
+
+
+
 /* AuthForm.css */
 .auth-form {
     max-width: 400px;
     margin: auto;
+    margin-top: 5cm;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -27,7 +65,7 @@
   }
   
   .auth-form button {
-    background-color: #4caf50;
+    background-color: #1e40af;
     color: white;
     padding: 10px;
     border: none;
@@ -36,10 +74,11 @@
   }
   
   .auth-form button:hover {
-    background-color: #45a049;
+    background-color: #1e40af;
   }
   
   .auth-form p {
+    margin-top: 3px;
     text-align: center;
     cursor: pointer;
     color: #007bff;
